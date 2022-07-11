@@ -1,0 +1,44 @@
+{##}
+{##}
+{#<!DOCTYPE html>#}
+{#<meta charset='utf-8'>#}
+{#<html>#}
+{#  <head>#}
+{#    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>#}
+{#    <link rel='stylesheet' href='style1.css'>#}
+{#      <style>#}
+{#                      table {#}
+{#                border-collapse: collapse;#}
+{#                border: 2px black solid;#}
+{#                font: 12px sans-serif;#}
+{#            }#}
+{#            td {#}
+{#                border: 1px black solid;#}
+{#                padding: 5px;#}
+{#                width: 50px;#}
+{#                text-align: center;#}
+{#            }#}
+{#      </style>#}
+{#  </head>#}
+{#  <body>#}
+{#    <script type='text/javascript'>#}
+{#            d3.text("C:\\freelance\\kaleem_proj\\telco_project\\templates\\data.csv", function(data) {#}
+{#                var parsedCSV = d3.csv.parseRows(data);#}
+{##}
+{#                var container = d3.select("body")#}
+{#                    .append("table")#}
+{##}
+{#                    .selectAll("tr")#}
+{#                        .data(parsedCSV).enter()#}
+{#                        .append("tr")#}
+{##}
+{#                    .selectAll("td")#}
+{#                        .data(function(d) { return d; }).enter()#}
+{#                        .append("td")#}
+{#                        .text(function(d) { return d; });#}
+{#            });#}
+{##}
+{#    </script>#}
+{#  </body>#}
+{#</html>#}
+{##}

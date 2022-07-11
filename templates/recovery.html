@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OTP </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style5.css') }}">
+</head>
+<body>
+    <br><br><br><br><br>
+        <div align="center">
+          <div align="center" class="border">
+             <div class="header">
+                <h1 class="word">Password Reset</h1>
+             </div>
+              <br><br><br>
+            <h2 class="word">
+                <form action="{{ url_for('OtpVerify') }}" method="post">
+                  <div class="msg">{{ msg }}</div>
+                    <input id="OTP" name="OTP" type="text" placeholder=" Enter OTP" class="textbox" required/><br><br>
+                    <input id="username" name="username" type="text" placeholder="Enter your username " class="textbox" required/><br><br>
+                     <input id="NewPassword" name="NewPassword" type="text" placeholder="Enter A new Password" class="textbox" required/><br><br>
+                     <input id="NewPassword1" name="NewPassword1" type="text" placeholder="Confirm Password" class="textbox" required/><br><br>
+                    <input type="submit" class="btn" value="Submit"><br>
+                </form>
+            </h2>
+            <p class="bottom">Already have an account?  <a class="bottom" href="{{url_for('login')}}"> Sign In here</a></p>
+          </div>
+        </div>
+</body>
+</html>

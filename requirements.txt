@@ -1,0 +1,11 @@
+numpy~=1.19.5
+pandas~=1.2.4
+sklearn~=0.0
+pydotplus
+matplotlib~=3.4.1
+flask_mysqldb
+mysql~=0.0.3
+mysql-connector-python~=8.0.27
+mysqlclient~=2.1.0
+Flask~=1.1.2
+scikit-learn~=0.24.2

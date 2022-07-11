@@ -1,0 +1,25 @@
+<html>
+<head>
+<title> Main </title>
+   <link rel="stylesheet" type="text/css" href="../static/style1.css">
+</head>
+<body>
+<div class="loginbox">
+<h1><b> Welcome</b></h1>
+<form method="post" action="/main_handler">
+<input type ="submit" name="analysis_btn" value="analysis">
+<input type ="submit" name="prediction_btn" value="prediction">
+<input type ="submit" name="dataset_btn" value="dataset">
+    <div align="center" class="border">
+       <div style=" display: flex; justify-content: center;" class="header">
+          <a class="btn"
+             href="{{ url_for('logout') }}" style=" display: flex; margin: 40px; border-radius: 10px; padding:5px;font-size:20px;background-color:red;color:#ffffff;">Logout</a>
+       </div>
+    </div>
+</form>
+
+</div>
+
+</body>
+
+</html>

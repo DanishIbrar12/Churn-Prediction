@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>Prediction</title>
+<link rel="stylesheet" type="text/css" href="../static/style3.css">
+</head>
+<body>
+<div class="loginbox">
+<div class="container">
+    <div style=" display: flex; justify-content: center;" class="header">
+          <a class="btn"
+             href="{{ url_for('main_page') }}" style=" display: flex; border-radius: 10px ;padding:5px;font-size:20px;background-color:red;color:#ffffff;">Go To Home</a>
+       </div>
+    <form method="post" action="/prediction">
+        <h1>Prediction</h1>
+
+        <h3>Prediction Result: {{ user_pred }}</h3>
+        <p>Select the attribute for churn prediction</p>
+        <div class="group">
+
+        <label for="xd">Gender               (0 Female, 1 Male)</label>
+            <input type="number" name="num1" style="float: right " min="0" max="1" required >
+        </div>
+        <div class="group">
+
+        <label for="xd">Dependent            (Yes 1 , No 0 )</label>
+            <input type="number" name="num2" style="float: right"min="0" max="1" required>
+        </div>
+        <div class="group">
+
+        <label for="xd">Phone Service        (Yes 1 ,No 0)</label>
+            <input type="number" name="num4" style="float: right"min="0" max="1" required>
+        </div>
+        <div class="group">
+
+        <label for="xd">Multiple Lines       (Yes 1 ,No 0 ,No service 2)</label>
+            <input type="number" name="num5" style="float: right"min="0" max="2" required>
+        </div>
+        <div class="group">
+
+        <label for="xd">Internet Services    (DSL 0,Fiber optic 1, No service 3)</label>
+            <input type="number" name="num6" style="float: right"min="0" max="3" required>
+        </div>
+        <div class="group">
+
+        <label for="xd">Online Backup        (No 0, Yes 1 No internet 3)</label>
+            <input type="number" name="num7" style="float: right"min="0" max="3" required>
+        </div>
+        <div class="group">
+
+        <label for="xd">Tech Support         (No 0, Yes 1 No internet 3)</label>
+            <input type="number" name="num8" style="float: right"min="0" max="3" required>
+        </div>
+        <div class="group">
+
+        <label for="xd">Streaming Tv         (No 0, Yes 1 No internet 3)</label>
+            <input type="number" name="num9" style="float: right"min="0" max="3" required>
+        </div>
+        <div class="group">
+
+        <label for="xd">Streaming Movies      (No 0, Yes 1 No internet 3)</label>
+            <input type="number" name="num10" style="float: right"min="0" max="3" required>
+        </div>
+        <div class="group">
+
+        <label for="xd">Contract              (Monthly 0, One year 1, Two year 2)</label>
+            <input type="number" name="num11" style="float: right"min="0" max="2" required>
+        </div>
+        <div class="group">
+
+        <label for="xd">Paperless Billing     (Monthly 0, One year 1, Two year 2)</label>
+            <input type="number" name="num12" style="float: right"min="0" max="2" required>
+        </div>
+        <div class="group">
+
+        <label for="xd">Payment (E-check 0, Mail 1, Bank 2, Credit card 3)</label>
+            <input type="number" name="num13" style="float: right"min="0" max="3" required>
+        </div>
+
+        <div class="group">
+
+        <label for="xd">Senior Citizen        (No  0, Yes 1 )</label>
+            <input type="number" name="num16" style="float: right"min="0" max="1" required>
+        </div>
+
+        <div class="group">
+
+        <label for="xd">Partner               (No  0, Yes 1 )</label>
+            <input type="number" name="num17" style="float: right"min="0" max="1" required>
+        </div>
+
+        <div class="group">
+
+        <label for="xd">Device Protection(No 0, Yes 1 No internet 3)</label>
+            <input type="number" name="num18" style="float: right"min="0" max="3" required>
+        </div>
+
+        <div class="group">
+
+        <label for="xd">Online Security       (No 0, Yes 1 No internet 3)</label>
+            <input type="number" name="num19" style="float: right"min="0" max="3" required>
+        </div>
+        <div class="group">
+
+        <label for="xd">Tenure               (In Months)</label>
+            <input type=integer" name="num3" style="float: right" required>
+        </div>
+        <div class="group">
+
+        <label for="xd">Monthly Charges</label>
+            <input type=integer" name="num14" style="float: right" required>
+        </div>
+        <div class="group">
+
+        <label for="xd">Total Charges</label>
+            <input type="integer" name="num15" style="float: right" required>
+        </div>
+        <input type ="submit" name="" value="Predict">
+    </form>
+
+</div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Analysis</title>
+<link rel="stylesheet" type="text/css" href="../static/style2.css">
+</head>
+<body>
+<div class="loginbox">
+<div class="container">
+    <form method="post" action="/main_page">
+<input type ="submit" name="" value="GO TO HOME">
+<h1>Analysis</h1>
+<p>Select the attribute for analysis</p>
+<div class="group">
+<a href="/demographic_feats">Demographic Fetures</a>
+{#<label for="xd">  Gender</label>#}
+</div>
+<div class="group">
+    <a href="/demographic_feats_churn">Demographic Features Churn</a>
+{#<label for="xd">Dependent</label>#}
+</div>
+<div class="group">
+<a href="/account_categ_feats">Account Categorical Features</a>
+{#<label for="xd">Tenure</label>#}
+</div>
+<div class="group">
+<a href="/account_feats_churn">Account Categorical Features Churn</a>
+{#<label for="xd">Phone Service</label>#}
+</div>
+<div class="group">
+<a href="/service_feats">Service Features</a>
+{#<label for="xd">Multiple Lines</label>#}
+</div>
+<div class="group">
+<a href="/service_feats_churn">Service Features Churn</a>
+{#<label for="xd">Internet Services</label>#}
+</div>
+<div class="group">
+<a href="/num_feats">Numerical Account Features Churn</a>
+{#<label for="xd">Online Backup</label>#}
+</div>
+
+</form>
+</div>
+</div>
+
+
+
+<div class="loginbox1">
+    <img src="{{ plot }}" width="600" height="550">
+</div>
+</body>
+</html>
+

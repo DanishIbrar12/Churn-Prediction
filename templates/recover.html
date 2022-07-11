@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Password Reset </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style5.css') }}">
+    </head>
+    <body>
+        <br><br><br><br><br>
+        <div align="center">
+          <div align="center" class="border">
+             <div class="header">
+                <h1 class="word">Password Reset</h1>
+             </div>
+              <br><br><br>
+            <h2 class="word">
+                <form action="{{ url_for('recover') }}" method="post">
+                  <div class="msg">{{ msg }}</div>
+                    <input id="email" name="email" type="text" placeholder="Enter Your Email ID" class="textbox" required/><br><br>
+                    <br><br>
+                    <input type="submit" class="btn" value="Reset"><br>
+                </form>
+            </h2>
+              <br><br>
+            <p class="bottom"> Want to try Again?  <a class="bottom" href="{{url_for('login')}}"> Sign In here</a></p>
+          </div>
+        </div>
+    </body>
+</html>
